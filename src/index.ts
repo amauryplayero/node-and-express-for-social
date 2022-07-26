@@ -12,7 +12,7 @@ const PORT = 8001;
 
 app.use(cors())
 app.use(express.json({limit: '25mb'}))
-app.use(express.static(path.resolve(__dirname, '../build')))
+// app.use(express.static(path.resolve(__dirname, '../build')))
 
 
 
