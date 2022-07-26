@@ -8,7 +8,8 @@
   "license": "MIT",
   "private": false,
   "scripts": {
-    "start": "npx ts-node src/index.ts"
+    "start": "npx ts-node src/index.ts",
+    "build": "npx ts-node src/index.ts"
   },
   "dependencies": {
     "@types/cors": "^2.8.12",
