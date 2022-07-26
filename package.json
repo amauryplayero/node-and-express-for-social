@@ -1,35 +1,19 @@
 {
-  "name": "server-for-social",
+  "name": "express-hello-world",
   "version": "1.0.0",
-  "description": "",
-  "main": "dist/index.ts",
+  "description": "Express Hello World on Render",
+  "main": "api.js",
+  "repository": "https://github.com/render-examples/express-hello-world",
+  "author": "Render Developers",
+  "license": "MIT",
+  "private": false,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "ts-node src/index.ts"
+    "start": "npx ts-node index.ts"
   },
-  "type": "commonjs",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/amauryplayero/node-and-express-for-social.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/amauryplayero/node-and-express-for-social/issues"
-  },
-  "homepage": "https://github.com/amauryplayero/node-and-express-for-social#readme",
   "dependencies": {
-    "aws-sdk": "^2.1181.0",
-    "dotenv": "^16.0.1",
-    "nodemon": "^2.0.19",
-    "pg": "^8.7.3",
-    "pg-hstore": "^2.3.4",
-    "sequelize": "^6.21.3"
+    "express": "^4.16.3"
   },
-  "devDependencies": {
-    "@types/cors": "^2.8.12",
-    "@types/express": "^4.17.13",
-    "ts-node": "^10.9.1",
-    "typescript": "^4.7.4"
+  "engines": {
+    "node": ">=14"
   }
 }
