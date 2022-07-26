@@ -3,11 +3,13 @@ import dotenv from 'dotenv'
 import { Sequelize } from 'sequelize'
 import {Request, Response} from 'express';
 
-dotenv.config({ path: '../.env' });
+dotenv.config({ });
 
 interface DatabaseType {
     DATABASE_URL?:string
 }
+
+console.log(process.env)
 
 const ID = process.env.ID
 const SECRET = process.env.SECRET
