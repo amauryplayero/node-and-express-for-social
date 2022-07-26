@@ -9,7 +9,7 @@ interface DatabaseType {
     DATABASE_URL?:string
 }
 
-console.log(process.env)
+
 
 const ID = process.env.ID
 const SECRET = process.env.SECRET
