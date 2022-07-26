@@ -3,7 +3,7 @@ import dotenv from 'dotenv'
 import { Sequelize } from 'sequelize'
 import {Request, Response} from 'express';
 
-dotenv.config();
+dotenv.config({ path: '../.env' });
 
 interface DatabaseType {
     DATABASE_URL?:string

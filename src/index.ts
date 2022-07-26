@@ -2,13 +2,13 @@
 import express, { Express, Request, Response} from 'express';
 import dotenv from 'dotenv'
 import path from 'path'
-import {test, postText, postImageToS3, getAllPosts} from './controller'
+import {postText, postImageToS3, getAllPosts} from './controller'
 import cors from 'cors'
 
 dotenv.config({ path: '../.env' });
 
 const app: Express = express();
-const PORT = 8000;
+const PORT = 8001;
 
 app.use(cors())
 app.use(express.json({limit: '25mb'}))
