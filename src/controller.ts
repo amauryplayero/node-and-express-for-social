@@ -49,6 +49,7 @@ const test = ():void =>{
 const getAllPosts = (req:Request, res:Response):void =>{
     sequelize.query(`
     SELECT * FROM Posts 
+    ORDER BY date DESC
     `).then(dbRes => {res.status(200).send(dbRes[0]);console.log(dbRes[0])})
 }
 

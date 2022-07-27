@@ -32,6 +32,7 @@ exports.test = test;
 const getAllPosts = (req, res) => {
     sequelize.query(`
     SELECT * FROM Posts 
+    ORDER BY date DESC
     `).then(dbRes => { res.status(200).send(dbRes[0]); console.log(dbRes[0]); });
 };
 exports.getAllPosts = getAllPosts;
